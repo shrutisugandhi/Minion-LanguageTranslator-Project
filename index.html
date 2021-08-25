@@ -7,11 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minion Language Translator</title>
 </head>
+<style>
+    textarea {
+        width: 60%;
+        display: block;
+        margin-bottom: 20px;
+    }
+</style>
 
 <body>
     <h1>Minion Banana Talk</h1>
-    <button onclick="translate()">Translate</button>
+    <textarea name="userInput" placeholder="Enter English Input & convert into Minion Language" id="user_input" cols="30" rows="10"></textarea>
+    <button id="btn-translate" onclick="translateInput()" style="margin-bottom: 20px">
+      Translate
+    </button>
+    <textarea name="userOutput" placeholder=" Minion Language" id="user_output" cols="30" rows="10"></textarea>
+
+    <script src="index.js" type="text/javascript"></script>
 </body>
-<script src="index.js" type="text/javascript"></script>
 
 </html>
